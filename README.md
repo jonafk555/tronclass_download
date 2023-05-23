@@ -28,6 +28,16 @@
 
 ![image](https://github.com/jonafk555/tronclass_download/assets/75651364/76290168-c139-4bd7-a93c-8f43ddc08cea)
 
+- 接下來，複製我寫好的腳本，並到ilearn的視窗，看到開發人員模式，點選`console`，並貼上腳本
+
+![image](https://github.com/jonafk555/tronclass_download/assets/75651364/bbd79d07-6f51-448a-b75b-a993db2d8f18)
+
+- 並依照腳本提示，把網址放進`var url = `後的`' '`中
+
+- 最後按下`enter`
+
+- 大功告成！，學習愉快(雖然不愉快)
+
 
 
 
