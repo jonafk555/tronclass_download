@@ -9,8 +9,6 @@ function downloadPDFFile() {
 }
 
   var decodedString = urlDecode(url);
-  console.log(decodedString);
-
   // Create a temporary link element
   var link = document.createElement('a');
   link.href = decodedString;
