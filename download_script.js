@@ -1,14 +1,19 @@
 function downloadPDFFile() {
   // Replace the URL below with the actual URL of the PDF file
-  var url = '{your file url}';
+  // 把 {你檔案的網址} 刪掉，放入你檔案的網址
+  var url = '{你檔案的網址}';
+  
+  function urlDecode(encodedString) {
+  var decodedString = decodeURIComponent(encodedString);
+  return decodedString;
+}
+
+  var decodedString = urlDecode(url);
+  console.log(decodedString);
 
   // Create a temporary link element
   var link = document.createElement('a');
-  link.href = url;
-
-  // Set the download attribute to force download
-  // 'document.pdf'可以更改成任一檔名
-  link.download = 'document.pdf';
+  link.href = decodedString;
 
   // Programmatically click the link to trigger the download
   link.click();
