@@ -8,10 +8,10 @@ function downloadPDFFile() {
   return decodedString;
 }
 
-  var decodedString = urlDecode(url);
+  var file = urlDecode(url);
   // Create a temporary link element
   var link = document.createElement('a');
-  link.href = decodedString;
+  link.href = file;
 
   // Programmatically click the link to trigger the download
   link.click();
