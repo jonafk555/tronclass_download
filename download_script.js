@@ -1,4 +1,5 @@
 function downloadPDFFile() {
+  // *1,*2改成你檔案的數字
   fetch('#page=1&zoom=auto,*1,*2')
     .then(response => response.text())
     .then(htmlContent => {
