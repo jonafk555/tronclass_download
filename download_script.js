@@ -1,5 +1,5 @@
 function downloadPDFFile() {
-  fetch('#page=1&zoom=auto,-22,549')
+  fetch('#page=1&zoom=auto,*1,*2')
     .then(response => response.text())
     .then(htmlContent => {
       // Create a temporary element to parse the HTML content
