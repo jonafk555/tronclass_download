@@ -1,6 +1,10 @@
 function downloadPDFFile() {
-  // *1,*2改成你檔案的數字
-  fetch('#page=1&zoom=auto,*1,*2')
+  var anchorElement = document.getElementById("secondaryViewBookmark");
+
+  // Fetch the href attribute value
+  var hrefValue = anchorElement.getAttribute("href");
+  
+  fetch(hrefValue)
     .then(response => response.text())
     .then(htmlContent => {
       // Create a temporary element to parse the HTML content
